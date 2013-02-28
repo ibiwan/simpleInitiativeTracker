@@ -20,17 +20,14 @@ headeropen = """<!DOCTYPE html><html><head><meta http-equiv="refresh" content="5
 admin      = """<script>
 function updateInitiative() {
   var xmlhttp;
-  // code for IE7+, Firefox, Chrome, Opera, Safari
   if (window.XMLHttpRequest) { xmlhttp=new XMLHttpRequest(); }
-  // code for IE6, IE5
   else { xmlhttp=new ActiveXObject("Microsoft.XMLHTTP"); }
   xmlhttp.onreadystatechange=function() {
       if (xmlhttp.readyState==4 && xmlhttp.status==200) {
         document.getElementById("myDiv").innerHTML=xmlhttp.responseText; } }
   xmlhttp.open("POST","update.py", false);
   xmlhttp.send(); 
-  window.location.reload(); 
-  //history.go(0);
+  window.location.reload();
 }
 </script></head><body><button type="button" onclick="updateInitiative()">Update Initiative</button><table>"""
 rowtext    = "<tr><td align=\"right\">%s</td><td> </td><td>%s</td><td>%s</td></tr>"
