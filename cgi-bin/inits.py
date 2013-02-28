@@ -12,9 +12,7 @@ for initrow in inits:
   rawlist.append((float(fields[0]), int(float(fields[0])), fields[1])) # (27.6, 27, kahlan)
 rawlist.sort(reverse=True)
 
-for row in rawlist:
-  ((aftercur, beforecur)[row[0] > cur]).append(row)
-displist = aftercur + beforecur
+displist = [x for x in rawlist if x[0] <= cur] + [x for x in rawlist if x[0] > cur]
 
 content    = "Content-Type: text/html\n\n"
 headeropen = """<!DOCTYPE html><html><head><meta http-equiv="refresh" content="5" >"""
