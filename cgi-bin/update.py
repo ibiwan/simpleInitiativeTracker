@@ -11,3 +11,5 @@ next = max([x for x in inits if x < cur] or [max(inits or [0.0])])
 curf.seek(0)
 curf.write(str(next))
 curf.close()
+
+print "Content-Type: text/html\n\nThanks!"
