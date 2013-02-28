@@ -15,7 +15,7 @@ for row in rawlist:
 displist = aftercur + beforecur
 
 content    = "Content-Type: text/html\n\n"
-headeropen = """<!DOCTYPE html><html><head><meta http-equiv="refresh" content="5" >"""
+headeropen = """<!DOCTYPE html><html><head><meta name="viewport" content="width = 320" /><meta http-equiv="refresh" content="5" >"""
 admin      = """<script>
 function updateInitiative() {
   var xmlhttp;
