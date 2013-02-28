@@ -2,7 +2,7 @@
 rawlist = []; beforecur = []; aftercur = []
 curf = open('../current_initiative.txt')
 cur = float(curf.readline().strip())
-inits = open('../initiatives.csv')
+initf = open('../initiatives.csv')
 inits = initf.readlines()
 
 for initrow in inits:
@@ -11,7 +11,7 @@ for initrow in inits:
 rawlist.sort(reverse=True)
 
 for row in rawlist:
-  (beforecur if row[0] > cur else aftercur).append(row)
+  ((aftercur, beforecur)[row[0] > cur]).append(row)
 displist = aftercur + beforecur
 
 content    = "Content-Type: text/html\n\n"

@@ -14,7 +14,7 @@ for initrow in inits:
 rawlist.sort(reverse=True)
 
 for row in rawlist:
-  (beforecur if row[0] > cur else aftercur).append(row)
+  ((aftercur, beforecur)[row[0] > cur]).append(row)
 displist = aftercur + beforecur
 
 content    = "Content-Type: text/html\n\n"
