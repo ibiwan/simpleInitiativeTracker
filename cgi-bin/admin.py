@@ -24,11 +24,9 @@ function updateInitiative() {
   var xmlhttp;
   if (window.XMLHttpRequest) { xmlhttp=new XMLHttpRequest(); }
   else { xmlhttp=new ActiveXObject("Microsoft.XMLHTTP"); }
-  xmlhttp.onreadystatechange=function() { 
-    if (xmlhttp.readyState==4 && xmlhttp.status==200) 
-      window.location.reload; }
   xmlhttp.open("POST","update.py", false);
   xmlhttp.send(); 
+  window.location.reload();
 }
 </script></head><body><button type="button" onclick="updateInitiative()">Update Initiative</button><table>"""
 rowtext    = "<tr><td align=\"right\">%s</td><td> </td><td>%s</td><td>%s</td></tr>"
