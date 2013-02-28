@@ -1,9 +1,10 @@
 #!/usr/bin/python
 rawlist = []; beforecur = []; aftercur = []
-with open('../current_initiative.txt') as curf:
-  cur = float(curf.read().strip())
-with open('../initiatives.csv') as initf:
-  inits = initf.readlines()
+
+curf = open('../current_initiative.txt')
+cur = float(curf.read().strip())
+initf = open('../initiatives.csv')
+inits = initf.readlines()
 
 for initrow in inits:
   fields = [x.strip() for x in initrow.split(',')]
