@@ -3,8 +3,10 @@ rawlist = []; beforecur = []; aftercur = []
 
 curf = open('../current_initiative.txt')
 cur = float(curf.read().strip())
+curf.close()
 initf = open('../initiatives.csv')
 inits = initf.readlines()
+initf.close()
 
 for initrow in inits:
   fields = [x.strip() for x in initrow.split(',')]
