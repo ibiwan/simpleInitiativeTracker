@@ -6,8 +6,7 @@ with open('../initiatives.csv') as initf:
   inits = initf.readlines()
 
 for initrow in inits:
-  fields = initrow.split(',')
-  fields = [x.strip() for x in fields]
+  fields = [x.strip() for x in initrow.split(',')]
   rawlist.append((float(fields[0]), int(float(fields[0])), fields[1], fields[2])) # (27.6, 27, kahlan, gm details)
 rawlist.sort(reverse=True)
 
