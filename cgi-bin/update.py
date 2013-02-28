@@ -2,10 +2,11 @@
 curf = open('../current_initiative.txt', 'r+')
 cur = float(curf.read().strip())
 
-inits = []
-initrows = open('../initiatives.csv').readlines()
-for initrow in initrows:
-  inits.append(float(initrow.split(',')[0].strip()))
+#inits = []
+#initrows = open('../initiatives.csv').readlines()
+#for initrow in initrows:
+#  inits.append(float(initrow.split(',')[0].strip()))
+inits = [float(initrow.split(',')[0].strip()) for initrow in open('../initiatives.csv').readlines()]
 
 next = max([x for x in inits if x < cur] or [max(inits or [0.0])])
   
