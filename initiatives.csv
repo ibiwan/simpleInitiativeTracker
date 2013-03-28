@@ -1,5 +1,30 @@
-27,some enemy (slightly hurt), escaflowne (27/30 hp)
-27.2,ah! my goddess (slowed), (slowed 4 rounds; updates on trigun's turn)
-3,trigun, (needs to reload)
-15    ,    ninja    scroll, (awesome status)
-26, dean, exultation
+12.0	# aura (hasty) and ball lightning and hand and deformation and fleshworms
+	# (100/100) (ball 6/15 rd complete);
+23.0	# lucien (hasty)
+	# (107/116);
+26.0	# long fangs (flying, frozen mid-air)
+	# (114/130) (26 on engineering to target weak points);
+18.0	# renn and tiger
+	# (tiger 77/120);
+16.0	# kahlan (hasty, fire resist 30, invis)
+	# (76/80);
+24.0	# exultation (hasty, well-gouged)
+	# (78/130);
+21.0	# mogram (hasty, imitating a pillar)
+	# (45/101);
+10.7	# spiny thing (poofed into black smoke)
+	# barbed devil (poofed)
+10.6	# spiny thing (poofed into black smoke)
+	# barbed devil (dead);
+10.5	# spiny thing (vanished)
+	# image dispelled;
+10.4	# spiny thing (vanished)
+	# image dispelled;
+10.3	# spiny thing (vanished)
+	# image dispelled;
+10.2	# spiny thing (poofed)
+	# summoned (dead);
+10.1	# spiny thing (poofed into black smoke)
+	# summoned (dead);
+17.9	# al (taking inventory)
+	# (89/89);
